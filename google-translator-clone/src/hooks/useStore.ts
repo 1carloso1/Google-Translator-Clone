@@ -1,5 +1,5 @@
 import { useReducer } from "react"
-import { Action, State } from "../types/types"
+import { Action, State } from "../types/types.d"
 
 const initialState: State = {
     fromLanguaje: 'auto',
@@ -94,6 +94,8 @@ export function useStore() {
         loading,
         interchangeLanguaje,
         setFromLanguaje,
-        setToLanguaje
+        setToLanguaje,
+        setFromText,
+        setResult
       }
 }

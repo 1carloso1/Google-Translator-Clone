@@ -18,3 +18,8 @@ export type Action =
     | {type: 'SET_TO_LANGUAJE'; payload:Languaje}
     | {type: 'SET_RESULT'; payload:string}
     | {type:  'INTERCHANGE_LANGUAJES'}
+
+export enum SectionType {
+    From = 'from',
+    To = 'to'
+}
